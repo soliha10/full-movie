@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img{
+  display: block;
+  height: auto;
+}
+
+.movie-list__wrapper {
+  min-height: 450px;
+}
+
+.loading-svg {
+  position: absolute;
+  top: 200px;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+}
+
+.rating-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/star.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '';
+}
+.year-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/calendar-clock.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '';
+}
+.runtime-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/time-fast.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '';
+}
+.movie-modal__imdb-link::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/link.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.bookmark-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookmark-btn::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  background-image: url("./images/unbookmark.png");
+  background-position: center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.bookmarked-btn::after {
+  background-image: url("./images/bookmarked.png");
+}
